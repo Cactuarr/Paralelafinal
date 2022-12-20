@@ -68,7 +68,6 @@ flutter:
   assets:
     - lib/assets/images/
     - lib/assets/Icons/
-    - lib/assets/Videos/
     - assets/pikachu.gif
     - assets/fondo.png
     - assets/fade.gif

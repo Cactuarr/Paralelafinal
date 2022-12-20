@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:taller3_distribuidos/screen/login.dart';
+import 'package:taller3_distribuidos/pantallas/pantallalogin.dart';
 
 void main() {
   runApp(const MyApp());

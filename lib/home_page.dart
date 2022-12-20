@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:taller3_distribuidos/widget/pokemon_widget.dart';
-import 'package:taller3_distribuidos/screen/pokemon_screen.dart';
-import 'package:taller3_distribuidos/state_manager/pokemon_provider.dart';
+import 'package:taller3_distribuidos/informacionpokeapi/pokemon.dart';
+import 'package:taller3_distribuidos/pantallas/pantallapokemons.dart';
+import 'package:taller3_distribuidos/conexionapi/conexionpokeapi.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -91,10 +91,6 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_back),
             label: 'Anterior',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favoritos',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_forward),

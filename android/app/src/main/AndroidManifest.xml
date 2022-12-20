@@ -1,9 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.taller3_distribuidos">
+    package="com.example.cpyd_app_g1">
    <application
-
-        android:usesCleartextTraffic="true"
-        android:label="taller3_distribuidos"
+        android:label="cpyd_app_g1"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -32,6 +30,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-    </application
-            >
+    </application>
 </manifest>

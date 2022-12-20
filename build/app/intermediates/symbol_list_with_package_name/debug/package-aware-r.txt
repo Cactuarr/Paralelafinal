@@ -1,4 +1,4 @@
-com.example.taller3_distribuidos
+com.example.cpyd_app_g1
 attr activityAction
 attr activityName
 attr alpha

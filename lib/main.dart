@@ -1,39 +1,50 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:taller3_distribuidos/Ventanas/login.dart';
-import 'package:taller3_distribuidos/Ventanas/lista_pokemones.dart';
+import 'package:taller3_distribuidos/screen/login.dart';
 
 void main() {
-  runApp(const Pokedex());
+  runApp(const MyApp());
 }
 
-class Pokedex extends StatelessWidget {
-  const Pokedex({super.key});
-
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Poke API',
+      debugShowCheckedModeBanner: false,
+      title: 'POKEDEX',
       theme: ThemeData(
-        primarySwatch: Colors.lime,
+        primarySwatch: Colors.lightBlue,
       ),
-      home: const Login(title: 'Login'),
+      home: const MyHomePage(title: 'Autentificación con Correo UTEM'),
     );
   }
 }
 
-class Login extends StatefulWidget {
-  const Login({super.key, required this.title});
-
+class MyHomePage extends StatefulWidget {
   final String title;
-
+  const MyHomePage({super.key, required this.title});
   @override
-  State<Login> createState() => _Login();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _Login extends State<Login> {
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+        const Duration(seconds: 5),
+        () => Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const LoginScreen())));
+  }
 
   @override
-  Widget build(BuildContext context){
-    return const LoginVentana();
+  Widget build(BuildContext context) {
+    return Container(
+        color: Colors.white,
+        child: const Image(
+          image: AssetImage("lib/assets/images/fade.gif"),
+          fit: BoxFit.cover,
+        ));
   }
 }

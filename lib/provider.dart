@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taller3_distribuidos/home_page.dart';
-import 'package:taller3_distribuidos/state_manager/pokemon_provider.dart';
+import 'package:taller3_distribuidos/conexionapi/conexion.dart';
 import 'package:provider/provider.dart';
 
 void main() {

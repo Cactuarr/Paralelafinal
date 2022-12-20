@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:taller3_distribuidos/informacionpokeapi/pokemon.dart';
-import 'package:taller3_distribuidos/pantallas/pantallapokemons.dart';
-import 'package:taller3_distribuidos/conexionapi/conexionpokeapi.dart';
+import 'package:taller3_distribuidos/widget/contenedor.dart';
+import 'package:taller3_distribuidos/pantallas/pantallapokemon.dart';
+import 'package:taller3_distribuidos/conexionapi/conexion.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
